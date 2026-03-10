@@ -1,0 +1,124 @@
+body{
+  background-color: rgba(255, 255, 255, 0.901);
+  padding: 20px;
+}
+.search-container {
+  position: relative; /* 1. 设置为相对定位，作为按钮的定位父级 */
+  display: flex; /* 使用 Flexbox 布局，虽然按钮是绝对定位，但有助于对齐 */
+  align-items: center;
+  margin-bottom: 20px; /* 和其他元素保持一些间距 */
+  padding: 1rem;
+}
+
+/* 搜索输入框 */
+.search-input {
+  background-color: white;
+  width: 100%; /* 占满整个容器宽度 */
+  padding: 10px 40px 10px 10px; /* 2. 关键！给右边留出足够放按钮的空间 (40px) */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* 确保 padding 不会增加元素的总宽度 */
+  color: black;
+}
+
+/* 搜索按钮 */
+.search-button {
+  position: absolute; /* 3. 设置为绝对定位 */
+  right: 20px; /* 4. 定位到父容器的右边，留一点边距 */
+  top: 50%; /* 5. 垂直居中准备 */
+  transform: translateY(-50%); /* 6. 精确垂直居中 */
+  
+  /* --- 美化样式 --- */
+  background-color: transparent; /* 背景透明 */
+  border: none; /* 去掉边框 */
+  cursor: pointer; /* 鼠标悬停时显示小手 */
+  padding: 6px; /* 给按钮一些内边距 */
+  color: black; /* 按钮文字颜色 */
+}
+
+/* 鼠标悬停在按钮上时的效果 */
+.search-button:hover {
+  color: gray;
+}
+
+.title{
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* 内容 */
+.content{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px 0px 10px 10px;
+  resize: vertical;
+  font-size: 16px;
+}
+/* 标题和内容 */
+.group{
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 1rem 2rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
+/* 标题或者内容 */
+.form-group{
+  margin: 0 0 1rem 0;
+}
+
+.save-button {
+  background-color: #4A90E2;
+  color: rgb(251, 249, 249);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.save-button:hover {
+  background-color: #0a41b8;
+}
+.note-item {
+  position: relative;
+  background-color: #fffffff0;
+  color: black;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.note-item h3 {
+  margin: 0 0 0.5rem 0;
+}
+.note-item p {
+  margin: 0;
+}
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+.created-at{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: gray;
+}
+

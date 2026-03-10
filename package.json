@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@ant-design/icons": "^6.0.1",
+    "antd": "^5.27.2"
+  },
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
